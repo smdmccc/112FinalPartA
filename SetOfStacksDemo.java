@@ -19,8 +19,8 @@ public class SetOfStacksDemo  {
       Random ran = new Random();
       // Loop & add elements to each Inner-Stack, displaying each int in a row
       for (int i = 1; i < ints + 1; i++)      {
-         num1 = ran.nextInt(100);
-         num2 = ran.nextInt(100);
+         num1 = 10 + ran.nextInt(90);
+         num2 = 10 + ran.nextInt(90);
          System.out.println("   " + num1 + " to Array | " + num2 + " to List");
          array.push(num1);
          list.push(num2);
@@ -42,7 +42,7 @@ public class SetOfStacksDemo  {
       try   {      
        for (int i = ints; i >= 0; i--) {
          int index = i-1;
-         System.out.println("   Index : " + index + " | Array : " + array.top() + " |  List : " + list.top());
+         System.out.println("   Array : " + array.top() + " |  List : " + list.top());
          array.pop();
          list.pop();
          // Indicate each time a new Inner-Stack is created
