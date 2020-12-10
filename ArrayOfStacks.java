@@ -34,7 +34,7 @@ public class ArrayOfStacks<T>
          }
          else
          {
-            stacks.push( new InnerStack<T>( STACK_CAPACITY ) );
+            stacks.push( new ArrayBoundedStack<T>( STACK_CAPACITY ) );
             numberOfStacks++;
          }
       }
